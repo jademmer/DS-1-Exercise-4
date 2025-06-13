@@ -87,8 +87,10 @@ def merge_sort(input_list):
         merged_index += 1
 
 
+
 # import maplotlib for visualization of the sorting
 import matplotlib.pyplot as plt
+plt.figure(figsize=(20,10))
 
 # create integer example data
 my_list = [54, 26, 93, 17, 77, 31, 44, 55, 20]
@@ -96,13 +98,37 @@ my_list = [54, 26, 93, 17, 77, 31, 44, 55, 20]
 # create x-axis values for the data
 x = range(len(my_list))
 
-# plot the unsorted list
-plt.plot(x, my_list)
-plt.show()
+# plot the unsorted list, create a subplot for the first plot
+plt.subplot(1, 2, 1) 
+
+# pot a bar chart with default color
+plt.bar(x, my_list) 
+
+# add a title
+plt.title("Before merge-sorting", fontsize = 20)
+
+# add xlabel
+plt.xlabel("Index", fontsize = 15)
+
+# add ylabel
+plt.ylabel("Value", fontsize = 15) 
 
 # sort the list by inplace, recursive mergesort
 merge_sort(my_list)
 
-# plot the unsorted list
-plt.plot(x, my_list)
+# plot the unsorted list, create a subplot for the second one
+plt.subplot(1, 2, 2) 
+
+# plot a bar chart with a different color
+plt.bar(x, my_list, color="red") 
+
+# add a title
+plt.title("After merge-sorting", fontsize = 20) 
+
+# add xlabel
+plt.xlabel("Index", fontsize = 15) 
+
+# add ylabel
+plt.ylabel("Value", fontsize = 15) # add ylabel
+#Show the plot
 plt.show()
