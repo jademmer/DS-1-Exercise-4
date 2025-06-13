@@ -103,7 +103,7 @@ plt.subplot(1, 2, 1)
 plt.bar(x, my_list) 
 
 # add a title
-plt.title("Before merge sorting", fontsize = 20)
+plt.title("Before merge-sorting", fontsize = 20)
 
 # add xlabel
 plt.xlabel("Index", fontsize = 15)
@@ -121,7 +121,7 @@ plt.subplot(1, 2, 2)
 plt.bar(x, my_list, color="red") 
 
 # add a title
-plt.title("After merge sorting", fontsize = 20) 
+plt.title("After merge-sorting", fontsize = 20) 
 
 # add xlabel
 plt.xlabel("Index", fontsize = 15) 
